@@ -1,0 +1,70 @@
+<html ng-app="myModule">
+
+<body ng-controller='controller1'>
+<link rel="stylesheet" type="text/css" href="css/initial.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<!--Player 1  -->
+<div class="player1container activePlayer">
+  <div class ="row"><div class="col-xs-12 col-md-8">
+<!-- Score  -->
+
+<div class="score scorePlayer1"></div>
+<!-- Player  -->
+<div class="console player1">Console</div>
+</div> </div>
+<!--Games  -->
+<div class="row">
+<div class="col-md-6">
+<div class="games game1player1"></div> <div class="games game2player1"></div> <div class="games game3player1"></div>
+</div>
+<div class="reviews review1player1"></div> <div class="reviews review2player1"></div> <div class="reviews review3player1"></div>
+
+
+<div class="player1Cards">
+<div class="cards player1card1"></div>
+<div class="cards player1card2"></div>
+<div class="cards player1card3"></div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<!--Player 2  -->
+<div class="player2container inactivePlayer">
+<div class="col-xs-12 col-md-8">
+<!-- Score  -->
+<div class="score scorePlayer2"></div>
+<!-- Player  -->
+<div class="console player2"></div>
+
+</div>
+<!--Games  -->
+<div class="col-xs-12 col-md-8">
+<div class="games game1player2"></div> <div class="games game2player2"></div> <div class="games game3player2"></div>
+</div>
+<div class="reviews review1player2"></div> <div class="reviews review2player2"></div> <div class="reviews review3player2"></div>
+</div>
+
+<button type="button" class="btn btn-success endTurn" ng-click="changeClass()">End Turn</button>
+
+</body>
+
+
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js'></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<script src='js/modules/module.js'></script>
+<script src='js/modules/config.js'></script>
+<!-- <script src='js/directives/customDirectives.js'></script> -->
+<script src='js/controller/controller.js'></script>
+<script src='js/services/service.js'></script>
+<!--My script -->
+<script src='js/script.js'></script>
+
+</html>
